@@ -1,0 +1,11 @@
+Slope values are given in the plugin api by "enum TrackSlope"
+Bank values are given in the plugin api by "enum TrackBanking"
+
+Turns are trickier
+- beginDirection and endDirection are relative, mostly.
+  - All 90 degree turns begin at 0. 90 deg Left turns endDirection is always 3, 90 deg Right turns endDirection is always 1.
+  - 45 degree turns depend on if the piece is starting on the grid or on the diagonal.
+    - Starting from the grid, the 45 deg turns beginDirection on 0. Left has endDirection 7, Right has endDirection 4.
+    - Starting on the diagonal, the 45 deg turns beginDirection on 4. Left has endDirection 0. Right has endDirection 1.
+- May be able to use the "next recommended track piece" as heuristic for size of a turn, but you still need to check the begin and end directions because a straight banked track piece will have turns as the recommended continuation.
+- Using turnDirection and length to obtain the type of turn could also work, but needs to account for the case of sloping curves which are longer than flat curves.
