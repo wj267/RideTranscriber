@@ -139,7 +139,7 @@ function showTranscriptionWindow() {
 
 registerPlugin({
     name: 'Ride Transcriber',
-    version: '1.0',
+    version: '0.1',
     authors: ['Witless Jester'],
     type: 'local',
     licence: 'MIT',
