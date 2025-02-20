@@ -2,7 +2,11 @@
 An OpenRCT2 Plugin that takes a ride and returns a sequential list of all track pieces.
 
 Credits:
+
+Basssiiie on the ORCT2 discord for telling me about the TrackIterator object.
+
 OpenRCT2-Automarketing by rubenrichtering, from which I learned how UI elements work.
+
 https://github.com/rubenrichtering/openrct2-automarketing/releases/tag/v1.0.0
 
 TODO:
